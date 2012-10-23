@@ -1,0 +1,12 @@
+[
+{"pk": 1, "model": "web.unidad", "fields": {"nombre": "Aravarua", "slug": "aravarua"}},
+{"pk": 2, "model": "web.unidad", "fields": {"nombre": "Chemen Kaita", "slug": "chemen-kaita"}},
+{"pk": 3, "model": "web.unidad", "fields": {"nombre": "Peami", "slug": "peami"}},
+{"pk": 4, "model": "web.unidad", "fields": {"nombre": "Quimeiche Rehue", "slug": "quimeiche-rehue"}},
+{"pk": 5, "model": "web.unidad", "fields": {"nombre": "Weñilen Rayü", "slug": "wenilen-rayu"}},
+{"pk": 6, "model": "web.unidad", "fields": {"nombre": "Mahina Rayen", "slug": "mahina-rayen"}},
+{"pk": 7, "model": "web.unidad", "fields": {"nombre": "Puryelihuen", "slug": "puryelihuen"}},
+{"pk": 8, "model": "web.unidad", "fields": {"nombre": "Nehuen Hueni", "slug": "nehuen-hueni"}},
+{"pk": 9, "model": "web.unidad", "fields": {"nombre": "Aponcuyen", "slug": "aponcuyen"}},
+{"pk": 10, "model": "web.unidad", "fields": {"nombre": "Alei Peñi", "slug": "alei-peni"}}
+]
