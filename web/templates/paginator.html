@@ -1,0 +1,25 @@
+{# {% if paginator.has_other_pages %} #}
+
+<div class="span-24 clear">
+    <div class='paginator'>
+        <span class="link-prev{% if not paginator.has_previous %} disable{% endif %}">
+            <a href="?page={{ paginator.previous_page_number }}"><span class="icon fugue-document-page-previous"></span></a>
+        </span>
+        <span class="current-page">
+            Page {{ paginator.number }} of {{ paginator.paginator.num_pages }}
+        </span>
+        <span class="link-next{% if not paginator.has_next %} disable{% endif %}">
+            <a href="?page={{ paginator.next_page_number }}"><span class="icon fugue-document-page-next"></span></a>
+        </span>
+        <div class="clear"></div>
+    </div>
+</div>
+
+{# {% endif %} #}
+
+
+<div class="paging">
+<?php echo $paginator->prev('<', array(), null, array('class' => 'disabled'));?>
+<?php echo $paginator->numbers(array('separator'=>'', 'modulus'=> 6));?>
+<?php echo $paginator->next('>', array(), null, array('class' => 'disabled'));?>
+</div>
