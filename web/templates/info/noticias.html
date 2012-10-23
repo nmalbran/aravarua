@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block extra_head %}
+<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}web/css/noticias.css" />
+{% endblock extra_head %}
+
+
+{% block content %}
+<h1 class='titulo'>Novedades</h1>
+
+<!-- <?php $paginator->options(array('url' => $this->passedArgs)); ?> -->
+
+{% for noticia in noticia_list %}
+
+<div class='noticia_container'><div class='noticia_container_2'><div class='noticia_inner'>
+    <div class='noticia_top'>
+      <h2 class='noticia_titulo'>{{noticia.titulo}}</h2>
+      <p class='noticia_fecha'>{{noticia.modificada}}</p>
+      </div>
+    <div class='noticia_cuerpo'>{{noticia.cuerpo|linebreaksbr}}</div>
+    <div class='noticia_autor'>{{noticia.autor}}</div>
+</div></div></div>
+
+{% endfor %}
+
+<div class="paging">
+<?php echo $paginator->prev('<', array(), null, array('class' => 'disabled'));?>
+<?php echo $paginator->numbers(array('separator'=>'', 'modulus'=> 6));?>
+<?php echo $paginator->next('>', array(), null, array('class' => 'disabled'));?>
+</div>
+
+{% endblock content %}

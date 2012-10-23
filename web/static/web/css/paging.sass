@@ -1,0 +1,63 @@
+/* @CHARSET 'UTF-8';
+/* paging.sass */
+/* style del paginador
+
+$color: #d4a08c
+
+/* color del fondo
+$color_fondo: $color * 1.3
+
+//#DCCBC3
+//#BFAEA6
+$color_fondo_hover: $color * 0.7
+$borde: unquote("1px solid ") $color
+
+/* color de las letras
+$color_actual: black
+$color_activo: $color * 0.6
+$color_inactivo: white
+$color_hover: white
+
+$padding: 0.2em 0.4em
+
+div.paging
+  //background: red
+  color: $color_activo
+  margin: auto
+    bottom: 1em
+  width: 90%
+  padding: 0.2em
+  text-align: center
+  div.disabled
+    margin: 0 0.1em
+    color: $color_inactivo
+    display: inline
+    padding: $padding
+    background: $color_fondo
+    border: $borde
+  span
+    /*margin: 0 0.1em;
+  a
+    text-decoration: none
+    padding: $padding
+    background: $color_fondo
+    border: $borde
+    margin: 0 0.1em
+    color: $color_activo
+  span
+    &.current
+      margin: 0 0.1em
+      color: $color_actual
+      padding: $padding
+      background: $color_fondo
+      border: $borde
+    a
+      text-decoration: none
+      padding: $padding
+      background: $color_fondo
+      border: $borde
+      color: $color_activo
+  a:hover
+    background: $color_fondo_hover
+    color: $color_hover
+

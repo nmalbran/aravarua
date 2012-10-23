@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-# Create your models here.
 
 
 class Unidad(models.Model):
@@ -37,4 +36,3 @@ class Noticia(models.Model):
 
     def __unicode__(self):
         return "%s (%s)" % (self.titulo, self.creada)
-
