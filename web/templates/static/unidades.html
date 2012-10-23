@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block title %}Unidades{% endblock title %}
+
+
+{% block content %}
+
+<div style='background-color:#fda76c;text-align:right'>
+    <img src="{{STATIC_URL}}web/img/old/unidades.png" width="152" height="43" border="0" />
+</div>
+
+<div style='text-align:center'>
+    <img src="{{STATIC_URL}}web/img/old/organigrama_chico.jpg" width="603" height="576" border="0" usemap="#Map" />
+</div>
+
+
+<map name="Map" id="Map"><area shape="rect" coords="228,24,399,66" href="{% url noticias_unidad slug='quimeiche-rehue' %}" alt="quimeiche" />
+<area shape="rect" coords="230,132,404,172" href="{% url noticias_unidad slug='peami' %}" alt="peami" />
+<area shape="rect" coords="230,225,410,274" href="{% url noticias_unidad slug='wenilen-rayu' %}" alt="weni" />
+<area shape="rect" coords="41,359,171,396" href="{% url noticias_unidad slug='mahina-rayen' %}" alt="maina" />
+<area shape="rect" coords="180,360,309,399" href="{% url noticias_unidad slug='puryelihuen' %}" alt="purye" />
+<area shape="rect" coords="327,360,450,396" href="{% url noticias_unidad slug='nehuen-hueni' %}" alt="nehuen" />
+<area shape="rect" coords="461,361,592,397" href="{% url noticias_unidad slug='chemen-kaita' %}" alt="chemen" />
+<area shape="rect" coords="85,499,265,543" href="{% url noticias_unidad slug='aponcuyen' %}" alt="lobas" />
+<area shape="rect" coords="372,498,550,546" href="{% url noticias_unidad slug='alei-peni' %}" alt="lobos" />
+</map>
+
+{% endblock content %}s
