@@ -21,7 +21,7 @@
       <h2 class='noticia_titulo'>{{noticia.titulo}}</h2>
       <p class='noticia_fecha'>{{noticia.modificada}}</p>
       </div>
-    <div class='noticia_cuerpo'>{{noticia.cuerpo|linebreaksbr}}</div>
+    <div class='noticia_cuerpo'>{% autoescape off %}{{noticia.cuerpo|linebreaksbr}}{% endautoescape %}</div>
     <div class='noticia_autor'>{{noticia.autor}}</div>
 </div></div></div>
 
