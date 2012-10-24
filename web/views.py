@@ -13,4 +13,4 @@ class NoticiaListView(ListView):
     paginate_by = 7
 
     def get_queryset(self):
-        return super(NoticiaListView, self).get_queryset().filter(unidad__slug=self.kwargs['slug'], publicada=True).order_by('-modificada')
+        return super(NoticiaListView, self).get_queryset().filter(unidad__slug=self.kwargs['slug'], publicada=True).order_by('-creada')
