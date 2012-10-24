@@ -1,0 +1,6 @@
+[
+{"pk": 1, "model": "web.categoria", "fields": {"nombre": "Circulares"}},
+{"pk": 2, "model": "web.categoria", "fields": {"nombre": "Información"}},
+{"pk": 3, "model": "web.categoria", "fields": {"nombre": "Guias"}},
+{"pk": 4, "model": "web.categoria", "fields": {"nombre": "Otros"}}
+]

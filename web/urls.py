@@ -1,7 +1,7 @@
 from django.conf.urls.defaults import patterns, include, url
 from django.views.generic.simple import redirect_to, direct_to_template
 
-from views import NoticiaListView
+from views import NoticiaListView, RecursoListView
 
 urlpatterns = patterns('',
     url(r'^/?$', redirect_to, {'url': '/noticias/aravarua'}),
@@ -11,5 +11,6 @@ urlpatterns = patterns('',
     url(r'^fotos/?$', direct_to_template, {'template': 'static/fotos.html'}),
 
     url(r'^noticias/(?P<slug>[-\w\d]+)/?$', NoticiaListView.as_view(), name='noticias_unidad'),
+    url(r'^recursos/(?P<slug>[-\w\d]+)/?$', RecursoListView.as_view(), name='recursos_unidad'),
 
 )

@@ -19,7 +19,7 @@
 <div class='noticia_container'><div class='noticia_container_2'><div class='noticia_inner'>
     <div class='noticia_top'>
       <h2 class='noticia_titulo'>{{noticia.titulo}}</h2>
-      <p class='noticia_fecha'>{{noticia.creada}}</p>
+      <p class='noticia_fecha'>{{noticia.creada|date:"d F Y"}}</p>
       </div>
     <div class='noticia_cuerpo'>{% autoescape off %}{{noticia.cuerpo|linebreaksbr}}{% endautoescape %}</div>
     <div class='noticia_autor'>{{noticia.autor}}</div>

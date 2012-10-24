@@ -36,3 +36,38 @@ class Noticia(models.Model):
 
     def __unicode__(self):
         return "%s (%s)" % (self.titulo, self.creada)
+
+
+class Recurso(models.Model):
+    unidad = models.ForeignKey('Unidad')
+    nombre = models.CharField(max_length=100)
+    archivo = models.CharField(max_length=255)
+    categoria = models.ForeignKey('Categoria')
+
+    publicado = models.BooleanField(default=True)
+    creado = models.DateTimeField(auto_now_add=True, editable=False)
+    modificado = models.DateTimeField(auto_now=True, editable=False)
+
+    creado_por = models.ForeignKey('auth.User', related_name='recursos_creados', null=True, default=True)
+    modificado_por = models.ForeignKey('auth.User', related_name='recursos_modificados', null=True, default=True)
+
+    class Meta:
+        verbose_name = _('Recurso')
+        verbose_name_plural = _('Recursos')
+        app_label = 'web'
+
+    def __unicode__(self):
+        return self.nombre
+
+
+class Categoria(models.Model):
+    nombre = models.CharField(max_length=100)
+
+    class Meta:
+        verbose_name = _('Categoria')
+        verbose_name_plural = _('Categorias')
+        app_label = 'web'
+
+    def __unicode__(self):
+        return self.nombre
+
