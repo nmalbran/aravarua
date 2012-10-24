@@ -6,7 +6,9 @@ from views import NoticiaListView
 urlpatterns = patterns('',
     url(r'^/?$', redirect_to, {'url': '/noticias/aravarua'}),
     url(r'^nosotros/?$', direct_to_template, {'template': 'static/nosotros.html'}),
+    url(r'^historia/?$', direct_to_template, {'template': 'static/historia.html'}),
     url(r'^unidades/?$', direct_to_template, {'template': 'static/unidades.html'}),
+    url(r'^fotos/?$', direct_to_template, {'template': 'static/fotos.html'}),
 
     url(r'^noticias/(?P<slug>[-\w\d]+)/?$', NoticiaListView.as_view(), name='noticias_unidad'),
 

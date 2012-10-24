@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block title %}Nosotros{% endblock title %}
+
+
+{% block content %}
+
+<div style='text-align:right'>
+    <img src="{{STATIC_URL}}web/img/old/fotos.png" width="143" height="43" border="0" />
+</div>
+
+<div style="margin:auto;margin-top:1.5em;padding-top:10px;width:520px;height:385px;text-align:center;background-image:url('{{STATIC_URL}}web/img/old/marco_fotos.gif')">
+    <object width="500" height="375"><param name="flashvars" value="offsite=true&lang=es-us&page_show_url=%2Fphotos%2Faravarua%2Fshow%2F&page_show_back_url=%2Fphotos%2Faravarua%2F&user_id=36896883@N05&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=71649"></param> <param name="allowFullScreen" value="true"></param><embed src="http://www.flickr.com/apps/slideshow/show.swf?v=71649" width="500" height="375" align="absmiddle" type="application/x-shockwave-flash" allowFullScreen="true" flashvars="offsite=true&lang=es-us&page_show_url=%2Fphotos%2Faravarua%2Fshow%2F&page_show_back_url=%2Fphotos%2Faravarua%2F&user_id=36896883@N05&jump_to="></embed></object>
+
+</div>
+
+<div style="text-align:center;margin-top:1.5em">
+    <p><a href="http://www.flickr.com/photos/aravarua/">Flickr</a></p>
+    <p><a href="http://www.facebook.com/home.php#/photo_search.php?oid=7575975492&amp;view=all">Facebook</a></p>
+    <p><a href="http://www.fotolog.com/grupo_scout">Fotolog</a></p>
+</div>
+
+{% endblock content %}
