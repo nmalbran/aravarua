@@ -1,1 +1,1 @@
-web: gunicorn natufresh.wsgi
+web: gunicorn aravarua.wsgi
